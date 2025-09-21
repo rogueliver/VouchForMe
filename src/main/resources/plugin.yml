@@ -1,0 +1,43 @@
+name: VouchForMe
+version: 1.0.0
+description: A plugin that allows players to vouch for and devouch other players
+authors: [ rogueliver ]
+main: me.rogueliver.vouchforme.VouchForMePlugin
+api-version: 1.19
+softdepend: [PlaceholderAPI]
+
+commands:
+  vfm:
+    description: Main VouchForMe command
+    usage: /vfm reload
+    permission: vouchforme.use
+    permission-message: <red>You don't have permission to use this command!</red>
+    aliases: [vouchforme]
+  vouch:
+    description: Vouch for a player
+    usage: /vouch <player> [reason]
+    permission: vouchforme.use
+    permission-message: <red>You don't have permission to use this command!</red>
+  devouch:
+    description: Remove your vouch from a player
+    usage: /devouch <player> [reason]
+    permission: vouchforme.use
+    permission-message: <red>You don't have permission to use this command!</red>
+  vouches:
+    description: View vouches for a player
+    usage: /vouches <player>
+    permission: vouchforme.use
+    permission-message: <red>You don't have permission to use this command!</red>
+
+permissions:
+  vouchforme.use:
+    description: Allow using vouch commands
+    default: true
+  vouchforme.reload:
+    description: Allow reloading the plugin configuration
+    default: op
+  vouchforme.admin:
+    description: Administrative permissions for VouchForMe
+    default: op
+    children:
+      vouchforme.reload: true

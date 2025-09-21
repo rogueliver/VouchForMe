@@ -1,0 +1,49 @@
+# VouchForMe Configuration File
+
+## If you need help, feel free to contact me
+## on Discord / GitHub: rogueliver
+
+# Cooldown settings
+cooldown:
+  duration: 2592000        # 30 days in seconds
+  apply-to-devouch: false  # Apply cooldown when devouching
+
+# Messages (supports MiniMessage formatting)
+messages:
+  # Command messages
+  vouch-success: "<green>You have successfully vouched for <yellow>{player}</yellow>!</green>"
+  vouch-with-reason: "<green>You have successfully vouched for <yellow>{player}</yellow> with reason: <white>{reason}</white></green>"
+  devouch-success: "<red>You have successfully devouched <yellow>{player}</yellow>!</red>"
+  devouch-with-reason: "<red>You have successfully devouched <yellow>{player}</yellow> with reason: <white>{reason}</white></red>"
+  remvouch-success: "<gold>You have removed your vouch/devouch for <yellow>{player}</yellow>!</gold>"
+
+  # Error messages
+  player-not-found: "<red>Player <yellow>{player}</yellow> not found!</red>"
+  cannot-vouch-self: "<red>You cannot vouch for yourself!</red>"
+  already-vouched: "<yellow>You have already vouched for <yellow>{player}</yellow>! Use <white>/devouch {player}</white> first.</yellow>"
+  no-vouch-exists: "<red>You haven't vouched or devouched <yellow>{player}</yellow>!</red>"
+  cooldown-active: "<red>You must wait <yellow>{time}</yellow> before vouching again!</red>"
+
+  # Information messages
+  vouches-header: "<gold>======= Vouches for <yellow>{player}</yellow> =======</gold>"
+  vouches-entry: "<green>+ <white>{voucher}</white></green><gray>: {reason}</gray>"
+  devouches-entry: "<red>- <white>{devoucher}</white></red><gray>: {reason}</gray>"
+  no-vouches: "<gray>No vouches found for <yellow>{player}</yellow>.</gray>"
+
+  # Admin messages
+  config-reloaded: "<green>Configuration reloaded successfully!</green>"
+  config-reload-error: "<red>Error reloading configuration! Check console for details.</red>"
+
+  # Usage messages
+  usage-vouch: "<yellow>Usage: /vouch <player> [reason]</yellow>"
+  usage-devouch: "<yellow>Usage: /devouch <player> [reason]</yellow>"
+  usage-remvouch: "<yellow>Usage: /remvouch <player></yellow>"
+  usage-vouches: "<yellow>Usage: /vouches <player></yellow>"
+  usage-vfm: "<yellow>Usage: /vfm reload</yellow>"
+
+# Time format for cooldown display
+time-format:
+  days: "{days}d"
+  hours: "{hours}h"
+  minutes: "{minutes}m"
+  seconds: "{seconds}s"
