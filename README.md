@@ -2,7 +2,7 @@
 
 
 
-A Bukkit/Spigot plugin that allows players to vouch for and devouch other players with configurable cooldowns and MiniMessage formatting support.
+A Paper plugin that allows players to vouch for and devouch other players.
 
 
 
@@ -12,7 +12,9 @@ A Bukkit/Spigot plugin that allows players to vouch for and devouch other player
 
 - Vouch system: Players can vouch for other players with optional reasons
 
-- Devouch system: Players can remove their vouches with optional reasons
+- Devouch system: Players can give other players a devouch (negative vouch) with optional reasons
+
+- Remove system: Players can remove their vouches with optional reasons
 
 - Configurable cooldown: Set custom cooldown periods (default 30 days)
 
@@ -20,7 +22,7 @@ A Bukkit/Spigot plugin that allows players to vouch for and devouch other player
 
 - SQLite database: Efficient database storage with in-memory caching
 
-- Administrative commands: Reload configuration without restarting
+- Administrative commands: Reload plugin configuration
 
 
 
@@ -70,7 +72,7 @@ A Bukkit/Spigot plugin that allows players to vouch for and devouch other player
 
 
 
-The plugin creates a `config.yml` file with these options:
+The plugin creates a [`config.yml`](src/main/resources/config.yml) file with these options:
 
 
 
