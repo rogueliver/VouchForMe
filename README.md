@@ -28,9 +28,9 @@ A Bukkit/Spigot plugin that allows players to vouch for and devouch other player
 
 
 
-- /vouch <player> \[reason] - Vouch for a player
+- /vouch <player> [reason] - Vouch for a player
 
-- /devouch <player> \[reason] - Remove your vouch from a player
+- /devouch <player> [reason] - Remove your vouch from a player
 
 - /vouches <player> - View all vouches for a player
 
@@ -54,7 +54,7 @@ A Bukkit/Spigot plugin that allows players to vouch for and devouch other player
 
 
 
-1. Download the plugin JAR file from \[releases](https://github.com/rogueliver/vouchforme/releases) (or build it yourself)
+1. Download the plugin JAR file from [releases](https://github.com/rogueliver/vouchforme/releases) (or build it yourself)
 
 2. Place it in your server's plugins folder
 
@@ -102,7 +102,7 @@ The compiled JAR will be in the ``target`` directory.
 
 ## License
 
-This project is under the MIT License. See the \[LICENSE](LICENSE) file for details.
+This project is under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Author
 Made by rogueliver (RL)
