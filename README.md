@@ -1,4 +1,4 @@
-\# VouchForMe Plugin
+# VouchForMe Plugin
 
 
 
@@ -6,65 +6,65 @@ A Bukkit/Spigot plugin that allows players to vouch for and devouch other player
 
 
 
-\## Features
+## Features
 
 
 
-\- Vouch system: Players can vouch for other players with optional reasons
+- Vouch system: Players can vouch for other players with optional reasons
 
-\- Devouch system: Players can remove their vouches with optional reasons
+- Devouch system: Players can remove their vouches with optional reasons
 
-\- Configurable cooldown: Set custom cooldown periods (default 30 days)
+- Configurable cooldown: Set custom cooldown periods (default 30 days)
 
-\- MiniMessage support: Full MiniMessage formatting for all messages
+- MiniMessage support: Full MiniMessage formatting for all messages
 
-\- SQLite database: Efficient database storage with in-memory caching
+- SQLite database: Efficient database storage with in-memory caching
 
-\- Administrative commands: Reload configuration without restarting
-
-
-
-\## Commands
+- Administrative commands: Reload configuration without restarting
 
 
 
-\- /vouch <player> \[reason] - Vouch for a player
-
-\- /devouch <player> \[reason] - Remove your vouch from a player
-
-\- /vouches <player> - View all vouches for a player
-
-\- /vouch reload - Reload plugin configuration (requires permission)
+## Commands
 
 
 
-\## Permissions
+- /vouch <player> \[reason] - Vouch for a player
+
+- /devouch <player> \[reason] - Remove your vouch from a player
+
+- /vouches <player> - View all vouches for a player
+
+- /vouch reload - Reload plugin configuration (requires permission)
 
 
 
-\- vouchforme.use - Allow using vouch commands (default true)
-
-\- vouchforme.reload - Allow reloading configuration (default op)
-
-\- vouchforme.admin - Administrative permissions (default op)
+## Permissions
 
 
 
-\## Installation
+- vouchforme.use - Allow using vouch commands (default true)
+
+- vouchforme.reload - Allow reloading configuration (default op)
+
+- vouchforme.admin - Administrative permissions (default op)
 
 
 
-1\. Download the plugin JAR file from \[releases](https://github.com/rogueliver/vouchforme/releases) (or build it yourself)
-
-2\. Place it in your server's plugins folder
-
-3\. Start or restart your server
-
-4\. Configure the plugin in `plugins/VouchForMe/config.yml`
+## Installation
 
 
 
-\## Configuration
+1. Download the plugin JAR file from \[releases](https://github.com/rogueliver/vouchforme/releases) (or build it yourself)
+
+2. Place it in your server's plugins folder
+
+3. Start or restart your server
+
+4. Configure the plugin in `plugins/VouchForMe/config.yml`
+
+
+
+## Configuration
 
 
 
@@ -72,17 +72,17 @@ The plugin creates a `config.yml` file with these options:
 
 
 
-\- Cooldown duration: How long players must wait between vouches
+- Cooldown duration: How long players must wait between vouches
 
-\- Devouch cooldown: Whether devouching applies a cooldown
+- Devouch cooldown: Whether devouching applies a cooldown
 
-\- Messages: Customize all messages with MiniMessage formatting
+- Messages: Customize all messages with MiniMessage formatting
 
-\- Time format: Configure how cooldown time is displayed
+- Time format: Configure how cooldown time is displayed
 
 
 
-\## Building
+## Building
 
 
 
@@ -100,7 +100,7 @@ The compiled JAR will be in the ``target`` directory.
 
 
 
-\## License
+## License
 
 This project is under the MIT License. See the \[LICENSE](LICENSE) file for details.
 
