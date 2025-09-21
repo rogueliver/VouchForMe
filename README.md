@@ -28,13 +28,13 @@ A Bukkit/Spigot plugin that allows players to vouch for and devouch other player
 
 
 
-- /vouch <player> [reason] - Vouch for a player
+- ``/vouch <player> [reason]`` - Vouch for a player
 
-- /devouch <player> [reason] - Remove your vouch from a player
+- ``/devouch <player> [reason]`` - Remove your vouch from a player
 
-- /vouches <player> - View all vouches for a player
+- ``/vouches <player>`` - View all vouches for a player
 
-- /vouch reload - Reload plugin configuration (requires permission)
+- ``/vouch reload`` - Reload plugin configuration (requires permission)
 
 
 
