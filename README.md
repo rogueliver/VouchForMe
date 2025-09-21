@@ -22,8 +22,6 @@ A Paper plugin that allows players to vouch for and devouch other players.
 
 - SQLite database: Efficient database storage with in-memory caching
 
-- Administrative commands: Reload plugin configuration
-
 
 
 ## Commands
