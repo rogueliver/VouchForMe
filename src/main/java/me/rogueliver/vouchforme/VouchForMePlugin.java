@@ -1,5 +1,7 @@
 package me.rogueliver.vouchforme;
 
+import me.rogueliver.vouchforme.commands.VouchCommand;
+import me.rogueliver.vouchforme.data.VouchManager;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -30,7 +32,7 @@ public class VouchForMePlugin extends JavaPlugin {
         getCommand("vouches").setExecutor(commandHandler);
         getCommand("vouches").setTabCompleter(commandHandler);
 
-        getLogger().info("VouchForMe plugin has been enabled!");
+        getLogger().info("VouchForMe enabled successfully");
     }
 
     @Override
@@ -38,7 +40,7 @@ public class VouchForMePlugin extends JavaPlugin {
         if (vouchManager != null) {
             vouchManager.closeConnection();
         }
-        getLogger().info("VouchForMe plugin has been disabled!");
+        getLogger().info("VouchForMe disabled");
     }
 
     public static VouchForMePlugin getInstance() {
