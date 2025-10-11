@@ -1,0 +1,77 @@
+######################################################
+# VouchForMe Configuration #                         #
+############################  ( ) ( )  _ \/ \_/ \    #
+#        made by RL        #  | | | | (_(_)     |    #
+#   For support, contact:  #  | | | |  _) | (_) |    #
+#    Discord: rogueliver   #  | \_/ | |   | | | |    #
+#    Github: rogueliver    #  \___/(_)   (_) (_)     #
+######################################################
+
+database:
+  host: localhost
+  port: 3306
+  database: vouches
+  username: root
+  password: password
+  pool-size: 10
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  channel: vouches
+
+cooldown:
+  days: 30
+
+messages:
+  prefix: "<gradient:#00D9FF:#7B2FFF>VouchForMe</gradient> <gray>»</gray> "
+  vouch-sent: "<green>You vouched for {player}!"
+  devouch-sent: "<red>You devouched {player}!"
+  vouch-received: "<green>{player} vouched for you!"
+  devouch-received: "<red>{player} devouched you!"
+  on-cooldown: "<red>You must wait {days} days before vouching/devouching {player} again!"
+  player-not-found: "<red>Player not found!"
+  cannot-vouch-self: "<red>You cannot vouch for yourself!"
+  no-permission: "<red>You don't have permission to use this command!"
+  all-vouches-removed: "<green>All vouches for {player} have been removed!"
+  no-vouches: "<yellow>{player} has no vouches yet."
+
+gui:
+  title: "<gradient:#00D9FF:#7B2FFF>{player}'s Vouches</gradient>"
+  items:
+    vouch:
+      material: LIME_DYE
+      name: "<green>Vouch from {player}"
+      lore:
+        - ""
+        - "<gray>Date: <white>{date}"
+        - "<gray>Reason: <white>{reason}"
+        - ""
+    devouch:
+      material: RED_DYE
+      name: "<red>Devouch from {player}"
+      lore:
+        - ""
+        - "<gray>Date: <white>{date}"
+        - "<gray>Reason: <white>{reason}"
+        - ""
+    next-page:
+      material: ARROW
+      name: "<green>Next Page"
+      lore:
+        - "<gray>Click to view page {page}"
+    previous-page:
+      material: ARROW
+      name: "<yellow>Previous Page"
+      lore:
+        - "<gray>Click to view page {page}"
+    filler:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+
+sounds:
+  vouch-sent: ENTITY_PLAYER_LEVELUP
+  devouch-sent: ENTITY_VILLAGER_NO
+  vouch-received: ENTITY_EXPERIENCE_ORB_PICKUP
+  devouch-received: BLOCK_ANVIL_LAND

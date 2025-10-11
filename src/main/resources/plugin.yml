@@ -1,0 +1,32 @@
+name: VouchForMe
+version: ${project.version}
+main: me.rogueliver.vfm.VouchForMe
+api-version: 1.20
+authors: [ RL ]
+description: Vouch system plugin with redis for multi-server sync
+
+commands:
+  vouch:
+    description: Vouch for another player
+    usage: /vouch <player> [reason]
+    permission: vouch.user
+  devouch:
+    description: Remove your vouch from a player
+    usage: /devouch <player> [reason]
+    permission: vouch.user
+  vouches:
+    description: View vouches for a player
+    usage: /vouches <player>
+    permission: vouch.user
+  remvouch:
+    description: Remove all vouches for a player
+    usage: /remvouch <player>
+    permission: vouch.admin
+
+permissions:
+  vouch.user:
+    description: Allows using vouch commands
+    default: true
+  vouch.admin:
+    description: Allows managing vouches
+    default: op
